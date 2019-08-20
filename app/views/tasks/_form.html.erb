@@ -1,0 +1,18 @@
+<%= form_for @tasks do |t| %>
+  <div>
+    <%= t.label :title %>
+    <%= t.text_field :title%>
+  </div>
+
+  <div>
+    <%= t.label :details %>
+    <%= t.number_field :details, class: 'form-control' %>
+  </div>
+
+  <div>
+    <%= t.label :completed %>
+    <%= t.text_field :completed %>
+  </div>
+
+  <%= t.submit %>
+<% end %>
